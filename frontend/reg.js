@@ -1,4 +1,4 @@
-const API_BASE_URL= "https://todo-frontend-p05u.onrender.com";
+const API_BASE_URL= "https://todo-site-1ql4.onrender.com";
 
 document.getElementById("registerBtn").addEventListener("click", async () => {
   const username = document.getElementById("username").value;
