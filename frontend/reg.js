@@ -9,7 +9,7 @@ document.getElementById("registerBtn").addEventListener("click", async () => {
     return;
   }
 
-  const res = await fetch(`${API_BASE_URL}/auth/register`, {
+  const res = await fetch(`${API_BASE_URL}/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password })
