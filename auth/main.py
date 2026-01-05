@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from sqlmodel import SQLModel, Session, select
-from .model import Note_Create, User, User_Create, User_Read, Notes
-from .database import engine
+from auth.model import Note_Create, User, User_Create, User_Read, Notes
+from auth.database import engine
 from typing import Annotated
-from .auth import get_current_user
-from passlib.context import CryptContext
-from .auth import auth
+from auth.auth import get_current_user
+from passlib.context import CryptContext 
+import auth.auth as auth
 from fastapi.middleware.cors import CORSMiddleware
 
 

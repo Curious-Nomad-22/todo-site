@@ -1,14 +1,14 @@
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
-from .model import Token
+from auth.model import Token
 from typing import Annotated
 from sqlmodel import Session, select
 from fastapi import Depends, HTTPException, status, APIRouter
-from .model import User, Token
+from auth.model import User, Token
 from passlib.context import CryptContext
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
-from .database import engine
+from auth.database import engine
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
