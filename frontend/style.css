@@ -9,7 +9,7 @@
          justify-content: center;
          align-items: center;
          min-height: 100vh;
-         background: url('blue.jpg') no-repeat;
+         background: url('pic.jpg') no-repeat;
          background-size: cover;
          background-position: center;
        } 
@@ -31,6 +31,7 @@
        .wrapper .form-box {
          width: 100%;
          padding: 40px;
+         opacity: 100%;
        }
 
        .form-box h1 {
@@ -150,11 +151,13 @@ body {
     min-height: 100vh;
     padding: 2rem 1rem;
     line-height: 1.5;
+    background: url('pic.jpg') no-repeat;
 }
 
 .container {
     max-width: 48rem;
     margin: 0 auto;
+    opacity: 0.95;
 }
 
 .header {
