@@ -15,7 +15,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
   formData.append("username", username);
   formData.append("password", password);
 
-  const res = await fetch("${API_BASE_URL}/auth/token", {
+  const res = await fetch('${API_BASE_URL}/auth/token', {
     method: "POST",
     body: formData
   });
