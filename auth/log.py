@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from jose import JWTError, jwt
-from auth.model import Token
+from model import Token
 from typing import Annotated
 from sqlmodel import Session, select
 from fastapi import Depends, HTTPException, status, APIRouter

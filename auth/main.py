@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from sqlmodel import SQLModel, Session, select
-from auth.model import Note_Create, User, User_Create, User_Read, Notes
+from model import Note_Create, User, User_Create, User_Read, Notes
 from auth.database import engine
 from typing import Annotated
 from auth.log import get_current_user
