@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curious Nomad To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+   <div class="container">
+        <div class="header">
+            <div class="header-title">
+               
+                <h1>Todo List</h1>
+            </div>
+            <p class="header-subtitle">Stay organized and get things done</p>
+        </div>
+
+        <div class="card">
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    placeholder="Add a new task..."
+                    autocomplete="off"
+                />
+                <button class="add-button" onclick="addTodo()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"/>
+                        <path d="M12 5v14"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="todos-list" id="todosList">
+                <!-- Todos will be inserted here -->
+            </div>
+
+            <div class="progress" id="progress">
+                <!-- Progress counter will be inserted here -->
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <p>Press Enter to quickly add tasks</p>
+        </div>
+    </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>

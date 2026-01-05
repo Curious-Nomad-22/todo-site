@@ -1,0 +1,9 @@
+fastapi 
+uvicorn
+sqlmodel
+python-jose
+python-multipart
+python-jose
+passlib
+cryptography
+argon2-cffi

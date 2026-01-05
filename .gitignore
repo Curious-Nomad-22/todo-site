@@ -1,0 +1,12 @@
+
+#virtual environment files
+venv/
+.env
+auth.env/
+
+#python cache files
+__pycache__/
+*.pyc
+
+#database files
+*.db
