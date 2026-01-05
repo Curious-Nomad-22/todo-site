@@ -1,3 +1,6 @@
+const API_BASE_URL= "https://todo-frontend-p05u.onrender.com";
+
+
 document.getElementById("loginForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   const username = document.getElementById("username").value;
@@ -12,7 +15,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
   formData.append("username", username);
   formData.append("password", password);
 
-  const res = await fetch("http://127.0.0.1:8000/auth/token", {
+  const res = await fetch("${API_BASE_URL}/auth/token", {
     method: "POST",
     body: formData
   });
