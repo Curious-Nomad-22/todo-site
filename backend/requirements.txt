@@ -8,3 +8,4 @@ passlib
 cryptography
 argon2-cffi
 psycopg-binary
+psycopg2
