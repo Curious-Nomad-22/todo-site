@@ -1,7 +1,7 @@
 const API = "https://todo-site-1ql4.onrender.com";
 const token = localStorage.getItem("access_token");
 
-let todos = [
+let Notes = [
     { id: '1', text: 'Welcome to your todo list!', completed: false },
     { id: '2', text: 'Click the checkbox to mark items complete', completed: false },
     { id: '3', text: 'Hover over items to delete them', completed: false }
