@@ -7,3 +7,4 @@ python-jose
 passlib
 cryptography
 argon2-cffi
+psycopg-binary
