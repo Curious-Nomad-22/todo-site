@@ -1,6 +1,8 @@
 const API_BASE_URL= "https://todo-site-1ql4.onrender.com";
 
+console.log("reg.js loaded")
 document.getElementById("registerBtn").addEventListener("click", async () => {
+  console.log("Register form clicked")
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
